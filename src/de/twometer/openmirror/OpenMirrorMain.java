@@ -1,6 +1,7 @@
 package de.twometer.openmirror;
 
 import de.twometer.openmirror.io.ResourceLoader;
+import de.twometer.openmirror.web.WebServerController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Cursor;
@@ -17,6 +18,9 @@ public class OpenMirrorMain extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        WebServerController webServerController = new WebServerController();
+        webServerController.start();
+
         FXMLLoader loader = new FXMLLoader(ResourceLoader.getResource("layout/main.fxml"));
         Parent root = loader.load();
 
