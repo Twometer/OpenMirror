@@ -8,4 +8,5 @@ Open Source smart mirror software
   - Weather
   - Calendars
   - RSS feeds
-- Configurable UI using a web interface
+  - On/Off time schedule
+- Configurable using a web interface
